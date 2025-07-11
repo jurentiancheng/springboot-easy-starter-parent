@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.easyapi</groupId>
+        <artifactId>easy-dependencies</artifactId>
+        <version>1.1.1-SNOWFLAKEID-RELEASE</version>
+        <relativePath />
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>starters</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>minio-spring-boot-starter</module>
+        <module>kafka-spring-boot-starter</module>
+    </modules>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <bsg-project-starters.version>1.1.1-SNOWFLAKEID-RELEASE</bsg-project-starters.version>
+        <bsg-project-jars.version>1.1.1-SNOWFLAKEID-RELEASE</bsg-project-jars.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.easyapi</groupId>
+                <artifactId>minio-spring-boot-starter</artifactId>
+                <version>${bsg-project-starters.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.easyapi</groupId>
+                <artifactId>kafka-spring-boot-starter</artifactId>
+                <version>${bsg-project-starters.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.easyapi</groupId>
+                <artifactId>web-base</artifactId>
+                <version>${bsg-project-starters.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

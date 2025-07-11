@@ -1,0 +1,9 @@
+# mybatisPlus 配置
+# warnning!!!! 因为使用到 Enum 类型，所以这里需要指定Enums类所在的包路径，和对应的处理器
+mybatis-plus:
+  # Enums 类所在的包路径
+  type-enums-package: com.easyapi.**.enums
+  # 对应类型处理器
+  type-handlers-package: com.easyapi.**.handler
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.extension.handlers.MybatisEnumTypeHandler
