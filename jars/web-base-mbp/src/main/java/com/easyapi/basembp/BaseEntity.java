@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 /**
  * 数据库实体类基类；基本几个字段定义是固定要求；
- * id是Integer自增长，is_del删除标志，createBy创建者，updateBy最后更新者，createBy和updateBy主要结合album的网关使用
+ * id是Integer 自增长 / Long snowflakeId，is_del删除标志，createBy创建者，updateBy最后更新者
  *
  * @Author: jurentiancheng
  * @date 2022/9/27
